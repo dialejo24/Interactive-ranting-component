@@ -43,6 +43,10 @@ body{
     height: 21.5em;
 }
 
+.card{
+    transition: all 1s ease-in;
+}
+
 .card img{
     padding: 0.7em;
     border-radius: 50%;
@@ -106,8 +110,10 @@ button:hover{
 
 
 .user__answer{
+    display: none;
     text-align: center;
-    
+    transform:rotateY(270deg);
+    transition: all 1s ease-in;
 }
 .user__answer figure{
     margin-bottom: 1em;
@@ -124,6 +130,22 @@ button:hover{
     border-radius: 15px;
     margin-bottom: .5em;
 
+}
+
+
+.animation{
+    transform: rotateY(90deg);
+}
+
+.animation2{
+    animation-name: movement;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes movement{
+    100%{
+        transform: rotateY(360deg);
+    }
 }
 
 

@@ -1,6 +1,8 @@
 const form = document.querySelector("form");
 const inputs = document.querySelectorAll("input");
 const userRank = document.querySelector(".user-rank");
+const card = document.querySelector(".card");
+const userAnswer = document.querySelector(".user__answer");
 
 function getUserRank(e){
     e.preventDefault();
@@ -8,6 +10,12 @@ function getUserRank(e){
     for(let i = 0; i < inputs.length; i++){
         if(inputs[i].checked){
             userRank.textContent = userRank.textContent + " " + inputs[i].value + " out of 5";
+            card.classList.add("animation");
+            setTimeout(() => {
+                card.style.display = "none";
+                userAnswer.style.display = "block";
+                userAnswer.classList.add("animation2");
+            }, 1000);
             return;
         }
     }
