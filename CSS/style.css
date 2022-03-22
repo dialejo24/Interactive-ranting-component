@@ -1,8 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
+:root{
+    --orange:hsl(25, 97%, 53%);
+    --white:hsl(0, 0%, 100%);
+    --light-gray:hsl(217, 12%, 63%);
+    --medium-gray:hsl(216, 12%, 54%);
+    --dark-blue:hsl(213, 19%, 18%);
+    --very-dark-blue:hsl(216, 12%, 8%);
+}
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size:0.9375rem;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+}
+
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+}
+
+.card, .user__answer{
+    border-radius: 15px;
+    max-width: 22.3em;
+    padding: 1.5em 1.1em;
+    width: 90%;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    height: 21.5em;
+}
+
+.card img{
+    padding: 0.7em;
+    border-radius: 50%;
+    width: 2.3em;
+    background-color: #2d394b;
+}
+
+.main__title, h2{
+    margin-block: .6em;
+    font-size: 1.4rem;
+}
+.main__para, .para__thanks{
+    color:var(--light-gray);
+    margin-bottom: 1.5em;
+}
+.radios{
+    display: flex;
+    justify-content: space-evenly;
+}
+label{
+    color: var(--medium-gray);
+    background-color: hsl(216, 25%, 23.5%);
+    border-radius: 50%;
+    position: relative;
+    transition: background-color .2s ease-in-out;
+    padding: .8em 1em .6em 1em;
+}
+label:hover{
+    cursor: pointer;
+    background-color: var(--orange);
+}
+input{
+    position: absolute;
+    visibility: hidden;
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin-top: 1.2em;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 15px;
+    color: var(--white);
+    font-weight: 600;
+    padding: .7em;
+    font-size: .9rem;
+    letter-spacing: 1.2px; 
+    transition: all .2s ease-in-out; 
+    cursor:pointer;
+}
+button:hover{
+    background-color: var(--white);
+    color:var(--orange);
+}
+
+
+.user__answer{
+    text-align: center;
+}
+.user__answer figure{
+    margin-bottom: 1em;
+}
+.user__answer img{
+    width:9em;
+}
+
+.user-rank{
+    color: var(--orange);
+    background-color: #2d394b;
+    display: inline-block;
+    padding: .37em .6em;
+    border-radius: 15px;
+    margin-bottom: .5em;
+
+}
+
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    color:var(--white);
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 

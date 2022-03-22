@@ -18,29 +18,31 @@
         <img src="images/icon-star.svg" alt="company logo">
       </figure>
       <header>
-        <h1>how did we do?</h1>
+        <h1 class="main__title">how did we do?</h1>
       </header>
       <main>
-        <p>
+        <p class="main__para">
           Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!
         </p>
         <form action="#">
-          <label for="uno">
-            <input type="radio" id="uno" name="stars" value="1">1
-          </label>
-          <label for="dos">
-              <input type="radio" id="dos" name="stars" value="2">2
-          </label>
-          <label for="tres">
-              <input type="radio" id="tres" name="stars" value="3">3
-          </label>
-          <label for="cuatro">
-              <input type="radio" id="cuatro" name="stars" value="4">4
-          </label>
-          <label for="cinco">
-              <input type="radio" id="cinco" name="stars" value="5">5
-          </label>
+          <div class="radios">
+            <label for="uno">
+              <input type="radio" id="uno" name="stars" value="1">1
+            </label>
+            <label for="dos">
+                <input type="radio" id="dos" name="stars" value="2">2
+            </label>
+            <label for="tres">
+                <input type="radio" id="tres" name="stars" value="3">3
+            </label>
+            <label for="cuatro">
+                <input type="radio" id="cuatro" name="stars" value="4">4
+            </label>
+            <label for="cinco">
+                <input type="radio" id="cinco" name="stars" value="5">5
+            </label>
+          </div>
           <button type="submit">SUBMIT</button>
         </form>
       </main>
@@ -50,15 +52,16 @@
       <figure>
         <img src="images/illustration-thank-you.svg" alt="illustration-thank-you">
       </figure>
-      <p class="user-rank"></p>
-      <h2>Thank you!</h2>
-      <p>
+      <p class="user-rank"> You selected 4 out of 5</p>
+      <h2 class="thanks">Thank you!</h2>
+      <p class="para__thanks">
         We appreciate you taking the time to give a rating. If you ever need more support, 
         don’t hesitate to get in touch!
       </p>
     </div>
+    <!--End of the section-->
   </div>
-   
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/dialejo24">Diego Díaz</a>.
