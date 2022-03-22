@@ -16,6 +16,7 @@ function getUserRank(e){
                 userAnswer.style.display = "block";
                 userAnswer.classList.add("animation2");
             }, 1000);
+            inputs[i].checked = false;
             return;
         }
     }

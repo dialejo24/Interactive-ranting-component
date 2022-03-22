@@ -35,16 +35,16 @@ body{
 
 .card, .user__answer{
     border-radius: 15px;
-    max-width: 22.3em;
-    padding: 1.5em 1.1em;
-    width: 90%;
+    max-width: 24.3em;
+    padding: 1.5em 2.1em;
+    width: 90.2%;
     background-color: var(--dark-blue);
     color: var(--white);
     height: 21.5em;
 }
 
 .card{
-    transition: all 1s ease-in;
+    transition: transform 1s ease-in;
 }
 
 .card img{
@@ -61,6 +61,8 @@ body{
 .main__para, .para__thanks{
     color:var(--light-gray);
     margin-bottom: 1.5em;
+    line-height: 1.5;
+    font-size: .874rem;
 }
 .radios{
     display: flex;
@@ -99,7 +101,7 @@ button{
     padding-block: .9em .7em;
     font-size: .9rem;
     letter-spacing: 1.2px; 
-    transition: all .2s ease-in-out; 
+    transition: background-color, color .2s ease-in-out; 
     cursor:pointer;
     font-family: 'Overpass', sans-serif;
 }
@@ -152,6 +154,8 @@ button:hover{
 .attribution { 
     font-size: 11px; text-align: center; 
     color:var(--white);
+    position:absolute;
+    bottom:0;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
