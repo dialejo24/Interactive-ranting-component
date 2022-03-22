@@ -74,6 +74,10 @@ label:hover{
     cursor: pointer;
     background-color: var(--orange);
 }
+.label-focus{
+    background-color: var(--medium-gray);
+    color:var(--light-gray);
+}
 input{
     position: absolute;
     visibility: hidden;
@@ -88,11 +92,12 @@ button{
     border-radius: 15px;
     color: var(--white);
     font-weight: 600;
-    padding: .7em;
+    padding-block: .9em .7em;
     font-size: .9rem;
     letter-spacing: 1.2px; 
     transition: all .2s ease-in-out; 
     cursor:pointer;
+    font-family: 'Overpass', sans-serif;
 }
 button:hover{
     background-color: var(--white);
@@ -102,6 +107,7 @@ button:hover{
 
 .user__answer{
     text-align: center;
+    
 }
 .user__answer figure{
     margin-bottom: 1em;
